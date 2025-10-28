@@ -15,7 +15,8 @@ services:
 
   backend:
     restart: on-failure
-    build: ./backend
+    build:
+      context: backend
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
@@ -26,10 +27,13 @@ services:
       - /app/node_modules
     ports:
       - "${BACKEND_PORT}"
+    depends_on:
+      - db
 
   frontend:
     restart: on-failure
-    build: ./frontend
+    build:
+      context: frontend
     environment:
       - VITE_API_URL=${VITE_API_SERVER}
     volumes:
