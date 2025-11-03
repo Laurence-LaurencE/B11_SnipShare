@@ -1,5 +1,5 @@
 // import clsx from "clsx";
-import logo_tbase from "../../../../public/pictures/logo_logo_tbase.png";
+import logo_tbase from "/pictures/logo_tbase.png";
 import { Nav } from "../nav/nav";
 import "./Header.css";
 

@@ -1,5 +1,5 @@
 import "./Footer.css";
-import logo_tbase from "../../../../public/pictures/logo_logo_tbase.png";
+import logo_tbase from "/pictures/logo_tbase.png";
 import { Button } from "../button/Button";
 import { useNavigate } from "react-router-dom";
 

@@ -2,3 +2,7 @@
     background-color: yellow;
 }
 
+.header img {
+    width: 70px; /* ou 5rem, selon ton design */
+  height: auto;
+}
