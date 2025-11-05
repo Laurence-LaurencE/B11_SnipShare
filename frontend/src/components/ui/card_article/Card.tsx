@@ -3,8 +3,7 @@ import "./Card.css";
 export interface CardProps {
   snipppetpostTitle: string;
   snippetContent: string;
-  id_tag: number;
-  tags: String[];
+  tags: string[];
   commentsCount: number;
   likesCount: number;
 }
@@ -29,17 +28,26 @@ export const Card = ({
       </pre>
 
       {/*____ tags______ */}
-      <div>
-        <ul>
-            {/* back => db > reqete */}
-          {/* <li>{tags = id_snippetpost + id_tag}</li> */}
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <div className="tags">
+        {tags.map((tag) => (
+          <span key={tag}>{tag}</span>
+        ))}
       </div>
+
+      <p>{commentsCount} commentaires</p>
+      <p>{likesCount} likes</p>
+
+{/* back => db > reqete 
+              <li>{tags = id_snippetpost + id_tag}</li> */}
+      {/* <div>
+        <ul>
+          <li>tag1</li>
+          <li>tag2</li>
+          <li>tag3</li>
+          <li>tag4</li>
+          <li>tag5</li>
+        </ul>
+      </div> */}
     </div>
   );
 };
