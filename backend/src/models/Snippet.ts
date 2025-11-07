@@ -1,4 +1,12 @@
 
+export interface SnippetsTypeRow {
+    id_snippetpost: number | null;
+    snipppetpost_title: string;
+    language_name: string;
+    visibility: boolean;
+    snippet: string;
+    id_actor: number | null;
+}
 
 export class Snippets {
     protected id_snippetpost: number | null;
@@ -43,7 +51,7 @@ export class Snippets {
     getSnippet = () => {
         return this.snippet;
     };
-    
+
     getIdActor = () => {
         return this.id_actor;
     };
