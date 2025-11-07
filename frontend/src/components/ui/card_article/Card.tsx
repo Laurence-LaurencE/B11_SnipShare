@@ -37,7 +37,7 @@ export const Card = ({
       <p>{commentsCount} commentaires</p>
       <p>{likesCount} likes</p>
 
-{/* back => db > reqete 
+      {/* back => db > reqete 
               <li>{tags = id_snippetpost + id_tag}</li> */}
       {/* <div>
         <ul>
